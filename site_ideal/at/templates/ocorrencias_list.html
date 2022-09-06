@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Ocorrencias</title>
+    </head>
+
+    <body>
+        {% extends "model-page.html" %}
+
+        {% block content %}
+            <h1>Lista de Ocorrencias</h1>
+            
+            <a href="{% url 'at:ocorrencia_create' %}">
+                <button type="button" class="btn btn-primary" style="float: right; margin-bottom: 10px;">Abrir Chamada</button>
+            </a>
+             
+            <table class="table table-bordered" margin-top: 10px>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Problema</th>
+                        <th>Descrição</th>
+                        <th>Data de Abertura</th>
+                        <th>Ultima Atualização</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for ocorrencias in object_list %}
+                        <tr>
+                            <td><a href="{{ Ocorrencia.get_adsolute_url }}">{{ocorrencias.id}}</a></td>
+                            <td>{{ocorrencias.problema}}</td>
+                            <td>{{ocorrencias.descricao}}</td>
+                            <td>{{ocorrencias.data_abertura}}</td>
+                            <td>{{ocorrencias.ultima_atualizacao}}</td>
+                            <td>{{ocorrencias.status}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endblock %}
+    </body>
+</html>
