@@ -16,7 +16,7 @@
     </head>
     
     <body class="d-flex flex-column">
-        <header>
+        <header class="header bg">
             {% include "model-header.html" %}        
         </header>
         
@@ -26,7 +26,7 @@
             </div>
         </main>
         
-        <footer class="py-4 bg-dark text-white-50">
+        <footer class="py-4 bg-primary text-dark-50">
             {% include "model-footer.html" %}
         </footer>
     </body>
@@ -34,6 +34,18 @@
     <style>
         html, body {
             height: 100%;
+        }
+
+        header {
+            margin-bottom: 10px;
+        }
+
+        header h6 {
+            font-size: 14px;
+            letter-spacing: 4px;
+            color: #222;
+            font-weight: 600;
+            line-height: 1.3;
         }
 
         main{

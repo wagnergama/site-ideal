@@ -1,9 +1,88 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href={% url 'index' %}>CRM</a>
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
 </nav>
 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 align-self-center text-left">
+      <h6>Desde 2004</h6>
+    </div>
+  <div class="col-sm-4 col-12 align-self-center box-1 text-center">
+    <a class="navbar-brand" href={% url 'index' %}>
+      {% load static %}
+      <img src="{% static 'logo.png' %}" alt="Logo" style="margin: 40px 0 40px 0;"/>
+    </a>
+  </div>
+  <div class="col-sm-4 align-self-center justify-text-right">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/idealinfo_rn/"><img src="{% static 'icon-instagram.png' %}" class="rounded float-end" alt="instagram"></a>
+      <img src="{% static 'icon.png' %}" class="rounded float-end">
+      <a href="https://www.facebook.com/idealinformatica.info"><img src="{% static 'icon-facebook.png' %}" class="rounded float-end" alt="facebook"></a>
+      <img src="{% static 'icon.png' %}" class="rounded float-end">
+      <a href="https://www.youtube.com/c/WagnerGama"><img src="{% static 'icon-youtube.png' %}" class="rounded float-end" alt="facebook"></a>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse justify-content-center ">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Sobre nós</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link active" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicos.html">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contatos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="suporte.html">Suporte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chamados.html">Abrir Chamado</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!---
+  <nav class="navbar navbar-expand-lg bg-primary">
+  
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Sobre nós</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link active" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicos.html">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contatos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="suporte.html">Suporte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chamados.html">Abrir Chamado</a>
+        </li>
+    </ul>
+ 
+</nav>
+--->
